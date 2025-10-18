@@ -1,0 +1,177 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pipi {
+  color: #fff78c;
+}
+
+body {
+  background: linear-gradient(180deg, #db2626, #fff78c);
+}
+
+
+.navegador{
+  transition: 1s;
+}
+
+.navegador__item{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+.navegador__list{
+  display: flex;
+  flex-direction: column;
+  border-radius: 2vh;
+  padding: 10px;
+  margin: 10px;
+  overflow: hidden;
+  background-color: #fff78c;
+  font-family: Alan Sans;
+  width: 40px;
+  row-gap: 5px;
+}
+
+.navegador__list:hover{
+  width: 120px;
+}
+
+
+  .box{
+    display: flex;
+    flex-direction: column;
+    background-color: #db2626;
+    border: #fff78c solid 2px;
+    align-items: center;
+    margin: 10px;
+    width: max-content;
+  }
+
+  .logo img{
+    width: 150px;
+  }
+
+  .title__service{
+    padding: 10px;
+    list-style: inside;
+    background-color: #fff78c;
+    border-radius: 4vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    width: 100px;
+
+  }
+
+  .title__service h1{
+    font-size: 1.4rem;
+    font-family: Lora;
+    color: #000;
+  }
+
+  .title__service ul{
+    font-size: .8rem;
+  }
+
+  .discurso h2{
+    font-size: .8rem;
+
+  }
+
+
+
+
+
+
+#novs{
+  width: fit-content;
+  background-color: aqua;
+}
+
+
+.novedades__container{
+  width: fit-content;
+  background-color: #db2626;
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: repeat(4, 200);
+  grid-template-areas: 
+  "a"
+  "b"
+  "c"
+  "d";
+
+}
+
+
+
+
+.novedades__fig--f{
+  grid-area: a;
+}
+
+.novedades__fig--e{
+  grid-area: b;
+}
+
+.novedades__fig--t{
+  grid-area: c;
+}
+
+.novedades__fig--c{
+  grid-area: d;
+}
+
+
+
+.novedades__fig{
+  width: 20px;
+  background-color: blue;
+}
+
+
+.novedades__description{
+  font-size: .4rem;
+  white-space: pre;
+}
+
+
+
+
+
+
+
+
+
+
+  .novedades__img{
+    width: 30px;
+    height: auto;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  .img__footer{
+    width: 65px;
+    height: 65px;
+  }
+
+
+/*# sourceMappingURL=styles.css.map */
