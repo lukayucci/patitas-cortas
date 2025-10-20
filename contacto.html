@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <title>Patitas Cortas| Inicio</title>
 </head>
+
 <body>
     <header>
 
         <nav class="navegador">
-         <ul class="navegador__list">
-            <li class="navegador__item"><img id="huella" src="imagenes/huella.png" class="navegador__img navegador__img--logo"></li>
-             <li class="navegador__item"><a class="navegador__link" href="ubicacion.html"><img src="imagenes/ubicacion.png" class="navegador__img navegador__img--i1"> </a>Ubicación</li>
-             <li class="navegador__item"><a class="navegador__link" href="producto.html"> <img src="imagenes/producto.png" class="navegador__img navegador__img--i2"> </a>Productos</li>
-             <li class="navegador__item"><a class="navegador__link" href="index.html"> <img src="imagenes/inicio.png" class="navegador__img navegador__img--i3"> </a>Inicio</li>
-             <li class="navegador__item"><a class="navegador__link" href="marcas.html"> <img src="imagenes/marcas.png" class="navegador__img navegador__img--i4"> </a>Marcas Asociadas</li>
-         </ul>
+            <ul class="navegador__list">
+                <div><img src="imagenes/huella.png"></div>
+                <li class="navegador_item"><a class="navegador_link" href="index.html"><img src="imagenes/inicio.png"
+                            class="navegador_img navegador_img--i1"> Inicio</a></li>
+                <li class="navegador_item"><a class="navegador_link" href="ubicacion.html"><img
+                            src="imagenes/ubicacion.png" class="navegador_img navegador_img--i1"> Ubicación</a></li>
+                <li class="navegador_item"><a class="navegador_link" href="producto.html"> <img
+                            src="imagenes/producto.png" class="navegador_img navegador_img--i2"> Productos</a></li>
+                <li class="navegador_item"><a class="navegador_link" href="contacto.html"> <img
+                            src="imagenes/contacto.png" class="navegador_img navegador_img--i3"> Contacto</a></li>
+                <li class="navegador_item"><a class="navegador_link" href="marcas.html"> <img
+                            src="imagenes/marcas.png" class="navegador_img navegador_img--i4"> Marcas Asociadas</a>
+                </li>
+            </ul>
         </nav>
+
     </header>
 
     <main>
-        
+        <section class="box__contacto">
+            <div class="title_service_contacto">
+                <h1>Contactanos</h1>
+            </div>
+
+            <div class="logo">
+                <img src="imagenes/logo.png" alt="logo de la marca">
+            </div>
+        </section>
+        <section class="form__ubicacion">
+            <form action="#" method="post">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+
+                <label for="email">Correo electrónico</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" name="mensaje"></textarea><br><br>
+
+                <input id="boton__enviar" type="submit" value="Enviar">
+            </form>
+        </section>
+
     </main>
 </body>
+
 </html>

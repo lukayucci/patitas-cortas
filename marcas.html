@@ -1,223 +1,92 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    color: #fff;
-}
-a{
-    text-decoration: none;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.pipi{
-    color: #fff78c;
-}
-body {
-    background:linear-gradient(180deg, #db2626, #fff78c);
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <title>Patitas Cortas| Productos</title>
+</head>
 
-.box{
-    width: 1fr;
-    background-color: #db2626;
-    border: #fff78c solid 2px;
-    margin: 10px;
-    border-radius: 10vh;
-    display: flex;
-    box-shadow: 0px 0px 100px black;  
-}
+<body>
+    <header>
 
-.title__service{
-    margin: 20px;
-    padding: 5px;
-    list-style: inside;
-    background-color: #fff78c;
-    border-radius: 8vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
+        <nav class="navegador">
+            <ul class="navegador__list">
+                <div><img src="imagenes/huella.png"></div>
+                <li class="navegador__item"><a class="navegador__link" href="index.html"><img src="imagenes/inicio.png"
+                            class="navegador__img navegador__img--i1"> Inicio</a></li>
+                <li class="navegador__item"><a class="navegador__link" href="ubicacion.html"><img
+                            src="imagenes/ubicacion.png" class="navegador__img navegador__img--i1"> Ubicación</a></li>
+                <li class="navegador__item"><a class="navegador__link" href="producto.html"> <img
+                            src="imagenes/producto.png" class="navegador__img navegador__img--i2"> Productos</a></li>
+                <li class="navegador__item"><a class="navegador__link" href="contacto.html"> <img
+                            src="imagenes/contacto.png" class="navegador__img navegador__img--i3"> Contacto</a></li>
+            </ul>
+        </nav>
 
-.title__service h1{
-    margin-bottom: 70px;
-    font-size: 3rem;
-    font-family: Lora;
-    color: black;   
-}
-
-.title__service ul{
-    font-family: Alan Sans;
-    font-size: 1.3rem;
-    font-weight: 700;
-    
-}
-
-.title__service li{
-    color: #000;
-}
-
-.discurso{
-    display: flex;
-    align-self: center;
-    letter-spacing: 2px;
-    font-family: Alan Sans;
-    border-radius: 2vh;
-}
-
-.navegador{
-    transition: 1s;
-}
-
-.navegador__list{
-    background-color: #fff78c;
-    display: flex;
-    flex-direction: column;
-    border-radius:4vh ;
-    padding: 20px;
-    margin: 10px;
-    overflow: hidden;
-    width: 80px;
-    transition: 1.3s;
-    row-gap: 12px;
-    font-family: Alan Sans;
-}
-
-.navegador__item{
-    display: flex;
-    align-items:center;
-    transition: 1.06s;
-    color: #000;
-    cursor: pointer;
-}
-
-.navegador__img{
-    width: 40px;
-    margin-right: 20px;
-    padding: 8px;
-
-}
-
-.navegador__list:hover{
-    width: 164px;
-}
-
-.navegador__item:hover{
-    transform: scale(1.1);
-}
-
-#novs{
-    text-align: center;
-    font-family: Lora;
-    background-color: #db2626;
-    border: solid 3px #222;
-    box-shadow: 0px 0px 16px #fff78c;
-    margin-top: 100px;
-}
-
-.novedades__container{
-display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: 260px;
-    gap: 24px;
-    padding: 24px;
-    grid-template-areas: 
-    "img-f img-f img-e img-e"
-    "img-f img-f img-e img-e"
-    "img-t img-t img-c img-c"
-    "img-t img-t img-c img-c";
-    animation: mostrar linear both;
-    view-timeline-name: --mos;
-    animation-timeline: --mos;
-    animation-range: cover 2% contain 10%;
-    
-    
-}
-
-@keyframes mostrar{
-    from{
-        opacity: 0;
-        transform: translateY(300px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-    
-}
+    </header>
 
 
-@keyframes reveal{
-    0%{
-        opacity: 0;
-        scale: .2;
-        transform: translateX(-300px);
-    }
-    100%{
-        opacity: 1;
-        scale: 1;
-        transform: translateX(0);
-    }
-}
 
-.novedades__fig{
-   background-color: #db2626;
-   padding: 23px;
-   border-bottom: solid 90px #db2626;
-   border-radius: 20px;
-}
+    <main>
 
-.novedades__img{
-    width: 100%;
-    height: 101%;
-    border-radius: 20px;
-    animation: reveal linear both;
-    view-timeline-name: --ver;
-    animation-timeline: --ver;
-    animation-range: cover 20% contain 90%;
-    
-}
+        <section class="box">
 
-.novedades__description{
-    font-family: Alan Sans;
-    white-space: pre;
-    color: #fff78c;
-}
+            <div class="logo">
+                <img src="imagenes/logo.png" alt="logo de la marca">
+            </div>
 
-.novedades__fig--f{
-    grid-area: img-f;
-}
+            <div class="discurso">
+                <h2>
+                    ¡¡Nuestras Marcas, <br>
+                    Las más confiables!!
+                </h2>
+            </div>
 
-.novedades__fig--e{
-    grid-area: img-e;
-}
+        </section>
 
-.novedades__fig--t{
-    grid-area: img-t;
-}
+        <section class="marcas__container">
+            <figure class="marcas__fig marcas__fig--1">
+                <img src="imagenes/img-marcas/marca-1.png.jpg" class="marcas__img marcas__img--1">
+            </figure>
 
-.novedades__fig--c{
-    grid-area: img-c;
-}
+            <figure class="marcas__fig marcas__fig--2">
+                <img src="imagenes/img-marcas/marca-2.jpg" class="marcas__img marcas__img--2"">
+            </figure>
 
-.container__footer{
-    width: 100%;
-    height: 100px;
-    margin: 0px;
-    padding: .3em;
-    border-radius: 50px 50px 0px 0px ;
-    background-color: #db2626;
-    
-}
-.img__footer{
-    width: 100px;
-    height: 100px;
-    border: 5px solid #222;
-    border-radius: 50%;
-    box-shadow: 0px 0px 55px #222;
-}
+            <figure class="marcas__fig marcas__fig--3">
+                <img src="imagenes/img-marcas/marca-3.jpg" class="marcas__img marcas__img--3">
+            </figure>
+           
+            <figure class="marcas__fig marcas__fig--4">
+                <img src="imagenes/img-marcas/marca-4.jpg" class="marcas__img marcas__img--4">
+            </figure>
 
-.text__footer{
-    font-family: Alan Sans;
-    font-size: 2rem;
-    color: #222;
+            <figure class="marcas__fig marcas__fig--5">
+                <img src="imagenes/img-marcas/marca-5.jpg" class="marcas__img marcas__img--5">
+            </figure>
+        </section>
+           
 
-    
-}
+     <footer class="container__footer">
+        <section class="section__footer">
+            <a href="https://www.instagram.com/emmiivallejos?igsh=MWN5eXlmdWRsaGozag==" target="_blank"><img src="imagenes/ig.png"
+                    alt="ig de mi cuenta" title="mi Instagram" class="img__footer"></a>
+            <p class="text__footer">Instagram de Patitas Cortas</p>
+        </section>
+     </footer>
+
+
+    </main>
+   
+</body>
+
+</html>
