@@ -30,8 +30,9 @@ a {
   }
 }
 body {
-  background: linear-gradient(180deg, #db2626, #fff78c);
-  background-repeat: no-repeat;
+  background: url(imagenes/fondito.png);
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 .navegador {
@@ -343,7 +344,7 @@ main {
   animation: reveal linear both;
   view-timeline-name: --ver;
   animation-timeline: --ver;
-  animation-range: cover 20% contain 90%;
+  animation-range: cover 0.1% contain 74%;
 }
 
 /* UBICACIÓN */
@@ -393,6 +394,9 @@ main {
     width: 1000px;
     height: 600px;
     border-radius: 20vh;
+  }
+  body {
+    background-size: 400px;
   }
 }
 /* MARCAS */
